@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Game</title>
+
+</head>
+<body>
+	<div class="div-div">
+		<h4 class="text-quest txt1">1. Найди машину.</h4>
+		<h4 class="text-quest txt2">2. Найди книгу.</h4>
+		<h4 class="text-quest txt3">3. Найди слона.</h4>
+		<h4 class="text-quest txt4">4. Найди нож.</h4>
+
+		<h2 class="text-score">Очки: </h2>
+
+		<img class="img img1" src="car.png" >
+		<img class="img img2" src="book.png">
+		<img class="img img3" src="slon.png">
+		<img class="img img4" src="knife.png">
+	</div>
+
+	<script>
+		let score = 0
+
+		document.querySelector(".img1").onclick = function(){
+			alert("Молодец!")
+			document.querySelector(".img1").style.display = "none"
+			document.querySelector(".txt1").style.textDecoration = "line-through"
+			score = score + 1
+			document.querySelector(".text-score").innerHTML = "Очки:" + score
+		}
+
+		document.querySelector(".img2").onclick = function(){
+			alert("Лучший ПРОСТО!")
+			document.querySelector(".img2").style.display = "none"
+			document.querySelector(".txt2").style.textDecoration = "line-through"
+			score = score + 1
+			document.querySelector(".text-score").innerHTML = "Очки:" + score
+		}
+
+		document.querySelector(".img3").onclick = function(){
+			alert("АШААААЛЕТ!")
+			document.querySelector(".img3").style.display = "none"
+			document.querySelector(".txt3").style.textDecoration = "line-through"
+			score = score + 1
+			document.querySelector(".text-score").innerHTML = "Очки:" + score
+		}
+
+		document.querySelector(".img4").onclick = function(){
+			alert("ЧИ за анаКОНДА!")
+			document.querySelector(".img4").style.display = "none"
+			document.querySelector(".txt4").style.textDecoration = "line-through"
+			score = score + 1
+			document.querySelector(".text-score").innerHTML = "Очки:" + score
+		}
+
+		
+	</script>
+</body>
+</html>
